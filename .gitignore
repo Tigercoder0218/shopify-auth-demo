@@ -1,3 +1,6 @@
+# script to set environment variables for module
+app.sh
+
 # Logs
 logs
 *.log
