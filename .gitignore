@@ -1,5 +1,5 @@
 # script to set environment variables for module
-app.sh
+env.sh
 
 # Logs
 logs
