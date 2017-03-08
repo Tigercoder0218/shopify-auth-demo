@@ -13,6 +13,7 @@ const auth = new Auth({
 
 const app = express();
 
+
 app.use(session({
     secret: 'icanhascheezburger',
     saveUninitialized: false,
@@ -53,7 +54,6 @@ app.get('/callback', (req, res) => {
         .then((token) => {
 
             console.log(token);
-
             req.session.token = token;
             req.session.state = undefined;
             res.redirect('/');
