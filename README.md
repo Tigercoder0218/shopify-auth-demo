@@ -4,8 +4,8 @@ Quick demo showing how to use [`shopify-token`](https://github.com/lpinca/shopif
 
 ## Usage
 
-First `cp sample.env .env`, then update `.env` with your shopify app's api key
-and secret.
+First `cp sample.env .env`, then update `.env` with your shopify app's api 
+key, secret, and redirect uri.
 
 Then ...
 ```
