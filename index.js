@@ -7,7 +7,7 @@ const Auth = require('shopify-token');
 const auth = new Auth({
     'apiKey': process.env.SHOPIFY_API_KEY,
     'sharedSecret': process.env.SHOPIFY_SECRET,
-    'redirectUri': 'http://localhost:8080/callback',
+    'redirectUri': process.env.SHOPIFY_REDIRECT_URI,
     'scopes':  ['read_products', 'read_orders', 'read_customers'] 
 });
 
@@ -65,4 +65,5 @@ app.get('/callback', (req, res) => {
         });
 });
 
-app.listen(8080, () => console.log('listening at http://localhost:8080'));
+const msg = 'now open http://localhost:8080/?shop={SHOP_TO_REQUEST_ACCESS}';
+app.listen(8080, () => console.log(msg));
