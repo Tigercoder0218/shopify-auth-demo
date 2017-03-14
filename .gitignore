@@ -4,5 +4,6 @@
 .npm
 .DS_Store
 .coverage
+.idea/
 node_modules
 tags
