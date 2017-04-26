@@ -4,7 +4,7 @@ Quick demo showing how to use [`shopify-token`](https://github.com/lpinca/shopif
 
 ## Usage
 
-First `npm run configure`, to copy the `sample.env` file into ``.env`, then update `.env` with your shopify app's api
+First `npm run configure`, to copy the `sample.env` file into `.env`, then update `.env` with your shopify app's api
 key, secret, and redirect uri.
 
 Then ...
