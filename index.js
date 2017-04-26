@@ -8,7 +8,8 @@ const auth = new Auth({
     'apiKey': process.env.SHOPIFY_API_KEY,
     'sharedSecret': process.env.SHOPIFY_SECRET,
     'redirectUri': process.env.SHOPIFY_REDIRECT_URI,
-    'scopes':  ['read_products', 'read_orders', 'read_customers'] 
+    'scopes':  ['read_orders', 'read_products', 'read_customers',
+                'write_orders'] 
 });
 
 const app = express();
@@ -65,5 +66,5 @@ app.get('/callback', (req, res) => {
         });
 });
 
-const msg = 'now open http://localhost:8080/?shop={SHOP_TO_REQUEST_ACCESS}';
+const msg = 'open https://{PROXY_TO_LOCALHOST}/?shop={SHOP_TO_REQUEST_ACCESS}';
 app.listen(8080, () => console.log(msg));
