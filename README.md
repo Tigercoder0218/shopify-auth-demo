@@ -1,6 +1,6 @@
 # shopify auth demo
 
-Quick demo showing how to use [`shopify-token`](https://github.com/lpinca/shopify-token) with [express](https://expressjs.com) for the [shopify oauth flow](https://help.shopify.com/api/guides/authentication/oauth).
+Quick demo showing how to use [`shopify-token`] with [express](https://expressjs.com) for the [shopify oauth flow].
 
 ## Usage
 
